@@ -1,0 +1,15 @@
+/* Contenedor de botones */
+.card-buttonsh {
+    display: flex;
+    gap: 15px; /* Separación entre los dos botones */
+    margin-top: 15px;
+}
+
+.card-buttonsh a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+}

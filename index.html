@@ -7,6 +7,9 @@
     <meta name="description" content="Cine Aurora - Tu destino para disfrutar del mejor cine en la ciudad. Descubre las últimas películas, compra tus entradas y vive la experiencia cinematográfica al máximo." />
     <link rel="icon" href="./assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/components/grids.css">
+    <link rel="stylesheet" href="./css/components/button.css">
+    <link rel="stylesheet" href="./css/components/card-horizontal.css">
   </head>
 
   <body>
@@ -28,11 +31,54 @@
       <section>
         <h2>Películas en cartelera</h2>
 
-        <div>
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
+        <div class="peliculas-container">
+          <div class="card-horizontal">
+          <img src="./assets/img/poster-1.png" alt="Poster" class="img-card-h" />
+    
+           <div class="card-contenth">
             <h3>Nombre película</h3>
             <p>Género</p>
+        
+          <div class="card-buttonsh">
+            <a href="./pages/detalle.html">Ver más</a>
+            <a href="#" onclick="alert('Lo sentimos...')">Comprar entradas</a>
+          </div>
+            </div> <!-- Cierre de card-contenth DESPUÉS de los botones -->
+        </div>
+        </div>
+
+
+
+        <div class="peliculas-container">
+          <div class="card-horizontal">
+            <img src="./assets/img/poster-1.png" alt="" />
+            <div class="card-contenth">
+            <h3>Nombre película</h3>
+            <p>Género</p>
+            <div class="card-buttonsh">
+            <a href="./pages/detalle.html">Ver más</a>
+            <a
+            href="#"
+            onclick="
+              alert('Lo sentimos, en este momento no funciona nuestro sistema')
+            "
+            >Comprar entradas</a
+          >
+        
+    </div>
+        </div>
+      </div>
+        </div>
+
+
+
+          <div class="peliculas-container">
+          <div class="card-vertical">
+            <img src="./assets/img/poster-1.png" alt="" />
+            <div class="card-content">
+            <h3>Nombre película</h3>
+            <p>Género</p>
+            <div class="card-buttons">
             <a href="./pages/detalle.html">Ver más</a>
             <a
             href="#"
@@ -42,39 +88,19 @@
             >Comprar entradas</a
           >
           </div>
-
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-          </div>ref="pages/pelicula.html">Ver más</a>
-
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+          </div>
+          </div>
           </div>
 
-          <div>
+
+
+          <div class="peliculas-container">
+          <div class="card-vertical">
             <img src="./assets/img/poster-1.png" alt="" />
+            <div class="card-content">
             <h3>Nombre película</h3>
             <p>Género</p>
+            <div class="card-buttons">
             <a href="./pages/detalle.html">Ver más</a>
             <a
             href="#"

@@ -1,0 +1,37 @@
+.card-horizontal {
+    display: flex;
+    flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
+    align-items: stretch; /* Para que el texto ocupe el mismo alto que la imagen */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Ajuste de la imagen */
+.card-horizontal img {
+    width: 180px; /* Ancho fijo para que todas las imágenes midan igual */
+    height: 250px;
+    object-fit: cover; /* Para que la imagen no se deforme */
+}
+
+/* El contenedor de la información */
+.card-contenth {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Título, género y botones uno abajo del otro */
+    justify-content: space-between; /* Distribuye el espacio para que los botones queden abajo */
+    flex-grow: 1; /* Hace que el contenido ocupe el resto de la card */
+}
+
+.card-contenth h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-contenth p {
+    color: #666;
+    margin: 5px 0 auto 0; /* Empuja los botones hacia el fondo */
+}
+

@@ -1,0 +1,27 @@
+/* Contenedor principal */
+.peliculas-container {
+    display: grid;
+    /* Por defecto (celulares): 1 sola columna */
+    grid-template-columns: 1fr; 
+    gap: 20px; /* Espacio entre las cards */
+    padding: 20px;
+    max-width: 1200px; /* Para que no se estire infinito en monitores enormes */
+    margin: 0 auto;    /* Centra todo el bloque en la pantalla */
+}
+
+/* Media Query para Tablets (ej: iPads) */
+@media (min-width: 768px) {
+    .peliculas-container {
+        /* En pantallas medianas: 2 columnas */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media Query para Computadoras (Desktop) */
+@media (min-width: 1024px) {
+    .peliculas-container {
+        /* En pantallas grandes: 3 columnas (así quedan 2 filas de 3 para tus 6 pelis) */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px; /* Un poquito más de espacio en compu queda más prolijo */
+    }
+}
