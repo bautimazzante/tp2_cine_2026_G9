@@ -1,4 +1,8 @@
 @import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+@import url("./components/nav.css");
+@import url("./components/footer.css");
+@import url("./components/button.css");
+
 
 /* Paletas de colores que pueden usar: */
 
@@ -30,4 +34,70 @@
   --color-secundario: #00b4d8;
   --color-texto: #ffffff;
   --color-texto-suave: #b3b3b3;
+}
+
+body {
+    background-color: var(--color-fondo); /* El #141414 que elegiste */
+    color: var(--color-texto);           /* Blanco para que se lea bien */
+    margin: 0;
+    font-family: 'Arial', sans-serif;    /* O la que prefieras */
+    line-height: 1.6;
+}
+
+/* Títulos con el rojo primario */
+h1, h2, h3 {
+    color: var(--color-texto);
+}
+
+/* agregados*/
+
+/* Contenedor principal en Desktop */
+.detalle-container {
+    display: flex;         /* OBLIGATORIO: Flexbox */
+    gap: var(--space-xl);  /* Espacio entre póster e info */
+    padding: var(--space-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.detalle-poster img {
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.detalle-info {
+    display: flex;
+    flex-direction: column; /* Apila los textos uno abajo del otro */
+    gap: var(--space-m);
+    flex: 1;                /* Toma el resto del espacio disponible */
+}
+
+/* --- MEDIA QUERY (Para que en celular se vea uno abajo del otro) --- */
+@media (max-width: 768px) {
+    .detalle-container {
+        flex-direction: column; /* El póster arriba, la info abajo */
+        align-items: center;
+        text-align: center;
+    }
+
+    .detalle-poster img {
+        width: 100%; /* El póster se agranda en el celu */
+        max-width: 300px;
+    }
+    
+    .badges-horarios {
+        justify-content: center;
+    }
+}
+main {
+    padding: 20px 5%; /* El 5% lo alinea perfectamente con el logo del header */
+    max-width: 1400px; /* Evita que en pantallas gigantes se desparrame todo */
+    margin: 0 auto;    /* Centra todo el bloque */
+}
+
+h2 {
+    margin-bottom: 32px; /* Le damos aire respecto a las cards */
+    font-size: 2rem;
 }

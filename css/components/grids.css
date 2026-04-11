@@ -21,7 +21,7 @@
 @media (min-width: 1024px) {
     .peliculas-container {
         /* En pantallas grandes: 3 columnas (así quedan 2 filas de 3 para tus 6 pelis) */
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px; /* Un poquito más de espacio en compu queda más prolijo */
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+        gap: 40px; 
     }
 }

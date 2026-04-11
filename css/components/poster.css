@@ -1,6 +1,13 @@
 /* las fotos de las películas están más pequeñas por un tema de visibilidad
 modifiquen los atributos a su gusto con una clase, o eliminen esta parte del código */
-img {
-  width: 100px;
-  height: 100px;
+.img-card-h {
+    width: 100%;
+    aspect-ratio: 2 / 3; /* Proporción clásica de poster de cine */
+    object-fit: cover; /* Evita que la imagen se estire */
+    border-bottom: 3px solid var(--primary-color);
+    transition: filter 0.3s ease;
+}
+
+.card-horizontal:hover .img-card-h {
+    filter: brightness(1.1); /* Efecto sutil al pasar el mouse */
 }

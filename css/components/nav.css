@@ -1,0 +1,50 @@
+/* nav.css */
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    /* Usamos la variable de superficie de tu paleta */
+    background-color: var(--color-superficie); 
+    padding: 20px 5%;
+    border-bottom: 2px solid var(--color-primario);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Puedes usar var(--space-m) si la tienes */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--color-texto);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+header img {
+    height: 50px; 
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    /* Usamos el texto suave para los links en reposo */
+    color: var(--color-texto-suave); 
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    /* Al pasar el mouse usamos el secundario (azul) o primario (rojo) */
+    color: var(--color-secundario); 
+}
