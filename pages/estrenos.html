@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Aurora 📽️ - Estrenos</title>
-    <meta name="description" content="Cine Aurora - Estrenos" />
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -15,69 +14,56 @@
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="#">Próximos estrenos</a>
-          <a href="../pages/login.html">Mi perfil</a>
-        </nav>
-      </div>
+      <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="#">Próximos estrenos</a>
+        <a href="./login.html">Mi perfil</a>
+      </nav>
     </header>
 
     <main>
-      <section>
-        <div>
-          <div>
-            <h1>Próximos Lanzamientos</h1>
-          </div>
+      <section class="estrenos-seccion">
+        <h2 class="titulo-seccion">Próximos Lanzamientos</h2>
 
-          <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
+        <div class="estrenos-grid">
+          <article class="card-estreno">
+            <div class="poster-wrapper">
+              <img src="../assets/img/momia.jpg" alt="Próximamente" />
+              <div class="overlay-fecha">Abril 2026</div>
+            </div>
+            <div class="estreno-info">
+              <h4>La posesión de la momia</h4>
+              <p>Género: Terror</p>
+            </div>
+          </article>
+
+          <article class="card-estreno">
+            <div class="poster-wrapper">
+              <img src="../assets/img/michael.png" alt="Próximamente" />
+              <div class="overlay-fecha">Abril 2026</div>
+            </div>
+            <div class="estreno-info">
+              <h4>Michael</h4>
+              <p>Género: Drama</p>
+            </div>
+          </article>
+
+          <article class="card-estreno">
+            <div class="poster-wrapper">
+              <img src="../assets/img/partido.jpg" alt="Próximamente" />
+              <div class="overlay-fecha">Mayo 2026</div>
+            </div>
+            <div class="estreno-info">
+              <h4>El partido</h4>
+              <p>Género: Documental</p>
+            </div>
+          </article>
         </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
       </section>
-
-      <footer>
-        <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
-      </footer>
     </main>
+
+    <footer>
+      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+    </footer>
   </body>
 </html>
