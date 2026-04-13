@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cine Aurora 📽️</title>
-    <meta name="description" content="Cine Aurora - Detalle de la película." />
+    <title>Cine Aurora 📽️ - Detalle</title>
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -14,46 +13,50 @@
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="../pages/estrenos.html">Próximos estrenos</a>
-          <a href="../pages/login.html">Mi perfil</a>
-        </nav>
-      </div>
+      <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="./estrenos.html">Próximos estrenos</a>
+        <a href="./login.html">Mi perfil</a>
+      </nav>
     </header>
 
-    <main class="detalle-container">
-    <section class="detalle-poster">
-        <img src="../assets/img/3275_img2_peli.jpg" alt="Project Hail Mary">
-    </section>
+    <main class="detalle-main">
+      <div class="detalle-container">
+        <section class="detalle-poster">
+          <img src="../assets/img/3275_img2_peli.jpg" alt="Project Hail Mary" />
+        </section>
 
-    <section class="detalle-info">
-        <h1>Project Hail Mary</h1>
-        <p class="tag-genero">Ciencia Ficción</p>
-        
-        <div class="sinopsis">
+        <section class="detalle-info">
+          <h1>Project Hail Mary</h1>
+          <span class="tag-genero">Ciencia Ficción</span>
+
+          <div class="sinopsis">
             <h3>Sinopsis</h3>
-            <p>El profesor de ciencias Ryland Grace (Ryan Gosling) se despierta en una nave espacial a años luz de casa sin recordar quién es ni cómo ha llegado hasta allí. A medida que recupera la memoria, empieza a descubrir su misión: resolver el enigma de la misteriosa sustancia que provoca la extinción del sol. Deberá recurrir a sus conocimientos científicos y a sus ideas poco ortodoxas para salvar todo lo que hay en la Tierra de la extinción… pero una amistad inesperada significa que quizá no tenga que hacerlo solo.</p>
-        </div>
+            <p>
+              Un astronauta se despierta en una nave espacial sin recordar quién
+              es ni cómo llegó allí, y debe usar su ingenio científico para
+              salvar a la humanidad.
+            </p>
+          </div>
 
-        <div class="horarios">
+          <div class="horarios">
             <h3>Horarios disponibles</h3>
             <div class="badges-horarios">
-                <span>15:30</span>
-                <span>18:00</span>
-                <span>21:15</span>
+              <span>15:30</span>
+              <span>18:00</span>
+              <span>21:15</span>
             </div>
-        </div>
+          </div>
 
-        <div class="puntuacion">
+          <div class="puntuacion">
             <h3>Puntuación</h3>
             <p>⭐⭐⭐⭐★ (4.5/5)</p>
-        </div>
+          </div>
 
-        <button class="btn-comprar">Comprar Entradas</button>
-    </section>
-</main>
+          <button class="btn btn-primario">Comprar Entradas</button>
+        </section>
+      </div>
+    </main>
 
     <footer>
       <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
