@@ -1,28 +1,28 @@
 .card-vertical {
-    display: flex;
-    flex-direction: column; /* Contenido uno abajo del otro */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden; /* Para que la imagen respete las esquinas redondeadas */
-    background-color: #fff;
-    transition: transform 0.3s ease;
-    height: 100%; /* Para que todas midan lo mismo en el grid */
+  display: flex;
+  flex-direction: column; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; 
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  height: 100%; 
 }
 
 .card-vertical img {
-    width: 100%;
-    aspect-ratio: 2 / 3; /* Proporción típica de póster de cine */
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 2 / 3; 
+  object-fit: cover;
 }
 
 .card-content {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Empuja los botones hacia abajo */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
 }
 
 .card-content h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
 }

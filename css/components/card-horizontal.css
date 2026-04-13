@@ -1,55 +1,72 @@
+/* card-horizontal.css */
 .card-horizontal {
-    display: flex;
-    flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
-    align-items: stretch; /* Para que el texto ocupe el mismo alto que la imagen */
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-/* Ajuste de la imagen */
-.card-horizontal img {
-    width: 180px; /* Ancho fijo para que todas las imágenes midan igual */
-    height: 250px;
-    object-fit: cover; /* Para que la imagen no se deforme */
-}
-
-/* El contenedor de la información */
-.card-contenth {
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Título, género y botones uno abajo del otro */
-    justify-content: space-between; /* Distribuye el espacio para que los botones queden abajo */
-    flex-grow: 1; /* Hace que el contenido ocupe el resto de la card */
-}
-
-.card-contenth h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #fdfdfd;
-}
-
-.card-contenth p {
-    color: #666;
-    margin: 5px 0 auto 0; /* Empuja los botones hacia el fondo */
-}
-
-.card-horizontal {
-    background-color: var(--color-superficie); /* El #1f1f1f */
-    border-radius: 12px;
-    border: 1px solid #333; 
-    overflow: hidden;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+  display: flex; 
+  background-color: var(
+    --color-superficie
+  ); 
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #333;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+  height: 280px; 
+  margin-bottom: 16px; 
 }
 
 .card-horizontal:hover {
-    transform: scale(1.02);
-    border-color: var(--color-primario); /* El rojo al pasar el mouse */
+  transform: scale(1.02); 
+  border-color: var(--color-primario);
 }
 
-.tag-genero {
-    background-color: var(--color-primario);
-    color: white;
-    /* ... resto de estilos que ya tenías ... */
+.img-card-h {
+  width: 180px; 
+  min-width: 180px; 
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Contenedor de la información */
+.card-contenth {
+  padding: 16px; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  flex-grow: 1;
+}
+
+.card-contenth h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--color-texto); 
+}
+
+.card-contenth p {
+  color: var(--color-texto-suave);
+  font-size: 0.9rem;
+  margin: 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Contenedor de botones interno */
+.card-buttonsh {
+  display: flex;
+  gap: 12px; 
+  margin-top: auto;
+}
+
+/* Responsive: en celulares se ve uno arriba del otro */
+@media (max-width: 480px) {
+  .card-horizontal {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .img-card-h {
+    width: 100%;
+    height: 200px;
+  }
 }

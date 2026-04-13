@@ -1,15 +1,25 @@
 /* Contenedor de botones */
-.card-buttonsh {
-    display: flex;
-    gap: 15px; /* Separación entre los dos botones */
-    margin-top: 15px;
+.btn {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
-.card-buttonsh a {
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-align: center;
+.btn-primario {
+  background-color: var(--color-primario);
+  color: white;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  border: 2px solid var(--color-primario);
+  color: var(--color-texto);
+}
+
+.btn:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
 }
