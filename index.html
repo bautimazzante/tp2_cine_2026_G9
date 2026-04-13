@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Aurora 📽️</title>
-    <meta name="description" content="Cine Aurora - Tu destino para disfrutar del mejor cine en la ciudad. Descubre las últimas películas, compra tus entradas y vive la experiencia cinematográfica al máximo." />
+    <meta
+      name="description"
+      content="Cine Aurora - Tu destino para disfrutar del mejor cine en la ciudad. Descubre las últimas películas, compra tus entradas y vive la experiencia cinematográfica al máximo."
+    />
     <link rel="icon" href="./assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/components/grids.css">
-    <link rel="stylesheet" href="./css/components/button.css">
-    <link rel="stylesheet" href="./css/components/card-horizontal.css">
   </head>
 
   <body>
@@ -18,163 +18,192 @@
         <h1>Cine Aurora</h1>
         <img src="./assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
-      <div>
-        <nav>
-          <a href="#">Inicio</a>
-          <a href="./pages/estrenos.html">Próximos estrenos</a>
-          <a href="./pages/login.html">Mi perfil</a>
-        </nav>
-      </div>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="./pages/estrenos.html">Próximos estrenos</a>
+        <a href="./pages/login.html">Mi perfil</a>
+      </nav>
     </header>
 
     <main>
       <section>
-        <h2>Películas en cartelera</h2>
+        <h2 style="padding-left: 20px; margin-top: 24px">
+          Películas en cartelera
+        </h2>
 
         <div class="peliculas-container">
           <div class="card-horizontal">
-          <img src="assets\img\3275_img2_peli.jpg" alt="Poster" class="img-card-h" />
-    
-          <div class="card-contenth">
-            <h3>Proyect Hail Mary</h3>
-            <p>Género: Ciencia ficción</p>
-            <p>Un astronauta se despierta en una nave espacial sin recordar quién es ni cómo llegó allí, y debe usar su ingenio científico para salvar a la humanidad.</p>
-        
-          <div class="card-buttonsh">
-            <a href="./pages/detalle.html">Ver más</a>
-            <a href="#" onclick="alert('Lo sentimos...')">Comprar entradas</a>
+            <img
+              src="assets/img/3275_img2_peli.jpg"
+              alt="Poster"
+              class="img-card-h"
+            />
+            <div class="card-contenth">
+              <h3>Project Hail Mary</h3>
+              <p>Género: Ciencia Ficción</p>
+              <p>
+                Un hombre despierta en una nave espacial sin recordar quién es,
+                pero pronto descubre que es la única esperanza de la humanidad
+                para sobrevivir.
+              </p>
+              <div class="card-buttonsh">
+                <a href="./pages/detalle.html" class="btn btn-secundario"
+                  >Ver más</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-primario"
+                  onclick="
+                    alert(
+                      'Lo sentimos, en este momento no funciona nuestro sistema',
+                    )
+                  "
+                  >Comprar entradas</a
+                >
+              </div>
+            </div>
           </div>
-            </div> <!-- Cierre de card-contenth DESPUÉS de los botones -->
-        </div>
-        </div>
 
-
-
-        <div class="peliculas-container">
           <div class="card-horizontal">
-            <img src="assets\img\Peli_2.jpg" alt="Poster" class="img-card-h" />
+            <img src="assets/img/peli5.jpg" alt="Poster" class="img-card-h" />
             <div class="card-contenth">
-            <h3>NUREMBERG: EL JUICIO DEL SIGLO </h3>
-            <p>Género: Drama Thriller</p>
-            <p>Un joven psicólogo estadounidense debe entrevistar a los líderes nazis capturados para determinar si son aptos para enfrentar el histórico juicio por crímenes de guerra.</p>
-            <div class="card-buttonsh">
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-        
-    </div>
-        </div>
-      </div>
-        </div>
+              <h3>Cumbres Borrascosas</h3>
+              <p>Género: Romance / Drama</p>
+              <p>
+                Una apasionada y tormentosa historia de amor y venganza basada
+                en el clásico literario ambientado en los páramos ingleses.
+              </p>
+              <div class="card-buttonsh">
+                <a href="./pages/detalle.html" class="btn btn-secundario"
+                  >Ver más</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-primario"
+                  onclick="
+                    alert(
+                      'Lo sentimos, en este momento no funciona nuestro sistema',
+                    )
+                  "
+                  >Comprar entradas</a
+                >
+              </div>
+            </div>
+          </div>
 
-
-
-          <div class="peliculas-container">
           <div class="card-horizontal">
-            <img src="assets\img\mario.jpg" alt="Poster" class="img-card-h" />
+            <img src="assets/img/peli6.jpg" alt="Poster" class="img-card-h" />
             <div class="card-contenth">
-            <h3>Super Mario Galaxy: La película</h3>
-            <p>Género: Animación / Aventura</p>
-            <p>Mario y sus amigos viajan más allá del Reino Champiñón para rescatar a Estela y detener una amenaza cósmica que pone en peligro a toda la galaxia.</p>
-            <div class="card-buttonsh">
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-          </div>
-          </div>
-          </div>
+              <h3>Boda Sangrienta 2</h3>
+              <p>Género: Terror / Comedia negra</p>
+              <p>
+                Grace sobrevive a una nueva noche de juegos letales cuando otra
+                familia adinerada intenta cumplir con un antiguo ritual.
+              </p>
+              <div class="card-buttonsh">
+                <a href="./pages/detalle.html" class="btn btn-secundario"
+                  >Ver más</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-primario"
+                  onclick="
+                    alert(
+                      'Lo sentimos, en este momento no funciona nuestro sistema',
+                    )
+                  "
+                  >Comprar entradas</a
+                >
+              </div>
+            </div>
           </div>
 
-
-
-          <div class="peliculas-container">
-<<<<<<< HEAD
           <div class="card-horizontal">
-            <img src="assets\img\avatar.jpg" alt="Poster" class="img-card-h" />
+            <img src="assets/img/mario.jpg" alt="Poster" class="img-card-h" />
             <div class="card-contenth">
-            <h3>Avatar: Fuego y Cenizas</h3>
-            <p>Género: Ciencia Ficción / Acción</p>
-            <p>Jake Sully y Neytiri se enfrentan a una nueva y agresiva tribu de Na'vi vinculada al fuego, mientras la RDA intensifica su colonización en Pandora.</p>
-            <div class="card-buttonsh">
-            <a href="./pages/detalle.html">Ver más</a>
-=======
-          <div class="card-vertical">
-            <img src="./assets/img/poster-1.png" alt="" />
-            <div class="card-content">
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <div class="card-buttons">
-            <a href="./pages/detalle.html">Ver más.</a>
->>>>>>> santiago-vidal
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-          </div>
-          </div>
-          </div>
+              <h3>Super Mario Bros 2</h3>
+              <p>Género: Animación / Aventura</p>
+              <p>
+                Mario y Luigi regresan para una nueva aventura a través del
+                Reino Champiñón enfrentando nuevos desafíos de Bowser.
+              </p>
+              <div class="card-buttonsh">
+                <a href="./pages/detalle.html" class="btn btn-secundario"
+                  >Ver más</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-primario"
+                  onclick="
+                    alert(
+                      'Lo sentimos, en este momento no funciona nuestro sistema',
+                    )
+                  "
+                  >Comprar entradas</a
+                >
+              </div>
+            </div>
           </div>
 
-          <div class="peliculas-container">
           <div class="card-horizontal">
-            <img src="assets\img\peli5.jpg" alt="Poster" class="img-card-h" />
+            <img src="assets/img/Peli_2.jpg" alt="Poster" class="img-card-h" />
             <div class="card-contenth">
-            <h3>Cumbres Borrascosas</h3>
-            <p>Género: Drama / Romance</p>
-            <p>Una apasionada y tormentosa historia de amor y venganza entre Catherine y Heathcliff, basada en el clásico literario ambientado en los páramos ingleses.</p>
-            <div class="card-buttonsh">
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-          </div>
-          </div>
-          </div>
+              <h3>Gladiador II</h3>
+              <p>Género: Acción / Épico</p>
+              <p>
+                Años después de presenciar la muerte de Máximo, Lucius se ve
+                obligado a entrar en el Coliseo para devolver la gloria a Roma.
+              </p>
+              <div class="card-buttonsh">
+                <a href="./pages/detalle.html" class="btn btn-secundario"
+                  >Ver más</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-primario"
+                  onclick="
+                    alert(
+                      'Lo sentimos, en este momento no funciona nuestro sistema',
+                    )
+                  "
+                  >Comprar entradas</a
+                >
+              </div>
+            </div>
           </div>
 
-          <div class="peliculas-container">
-            <div class="card-horizontal">
-            <img src="assets\img\peli6.jpg" alt="Poster" class="img-card-h" />
+          <div class="card-horizontal">
+            <img src="assets/img/avatar.jpg" alt="Poster" class="img-card-h" />
             <div class="card-contenth">
-            <h3>Boda Sangrienta 2</h3>
-            <p>Género: Terror / Comedia negra</p>
-            <p>Grace sobrevive a una nueva noche de juegos letales cuando otra familia adinerada intenta cumplir con un antiguo y sangriento ritual ancestral.</p>
-            <div class="card-buttonsh">
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-          </div>
-          </div>
-          </div>
+              <h3>Avatar: Fire and Ash</h3>
+              <p>Género: Ciencia Ficción / Aventura</p>
+              <p>
+                Jake Sully y Neytiri deben enfrentarse a una nueva tribu de
+                Na'vi que utiliza el fuego como arma de destrucción.
+              </p>
+              <div class="card-buttonsh">
+                <a href="./pages/detalle.html" class="btn btn-secundario"
+                  >Ver más</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-primario"
+                  onclick="
+                    alert(
+                      'Lo sentimos, en este momento no funciona nuestro sistema',
+                    )
+                  "
+                  >Comprar entradas</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p> &copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
