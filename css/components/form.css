@@ -1,0 +1,86 @@
+/* Contenedor principal para centrar el formulario en la pantalla */
+.registro-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 160px);
+  padding: var(--space-xl);
+}
+
+.registro-form {
+  background-color: var(--color-superficie);
+  padding: var(--space-l);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  border: 1px solid #333;
+}
+
+.registro-form h2,
+.registro-form h3 {
+  margin: 0;
+  color: var(--color-texto);
+  text-align: center;
+}
+
+.input-row {
+  display: flex;
+  gap: var(--space-m);
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+  font-weight: bold;
+}
+
+.registro-form
+  input:not([type="radio"]):not([type="color"]):not([type="range"]),
+.registro-form select {
+  padding: 12px;
+  background-color: #141414;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.registro-form input:focus,
+.registro-form select:focus {
+  border-color: var(--color-secundario);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 180, 216, 0.2);
+}
+
+.radio-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+  padding: 8px 0;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: var(--space-m) 0;
+}

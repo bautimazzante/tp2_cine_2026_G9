@@ -1,0 +1,82 @@
+/* Centrado de la página */
+.perfil-main {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.perfil-card {
+  background-color: var(--color-superficie);
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  overflow: hidden;
+}
+
+/* Encabezado con Flexbox */
+.perfil-header {
+  background: linear-gradient(to right, var(--color-primario), #b91c1c);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+/* Cuerpo del perfil con Grid */
+.perfil-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 32px;
+  padding: 32px;
+}
+
+.perfil-info h3,
+.perfil-historial h3 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--color-primario);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.perfil-info p {
+  margin: 8px 0;
+  color: var(--color-texto-suave);
+}
+
+/* Lista de historial */
+.lista-vistas {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-vistas li {
+  background-color: #141414;
+  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.fecha-vista {
+  color: var(--color-secundario);
+  font-weight: bold;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  .perfil-grid {
+    grid-template-columns: 1fr;
+  }
+}

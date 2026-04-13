@@ -1,0 +1,88 @@
+/* Contenedor que centra el contenido en la página */
+.detalle-main {
+  display: flex;
+  justify-content: center;
+  padding: 32px; /* Regla de los 4px */
+}
+
+/* Layout principal con Flexbox */
+.detalle-container {
+  display: flex;
+  gap: 40px; 
+  max-width: 1000px;
+  background-color: var(--color-superficie);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+/* Sección del póster */
+.detalle-poster img {
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+/* Sección de información (Flex vertical) */
+.detalle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.detalle-info h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.tag-genero {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  align-self: flex-start; 
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Horarios con Flexbox horizontal */
+.badges-horarios {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.badges-horarios span {
+  background-color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.badges-horarios span:hover {
+  background-color: var(--color-secundario);
+}
+
+/* --- MEDIA QUERY: OBLIGATORIO PARA EL TP --- */
+@media (max-width: 850px) {
+  .detalle-container {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .detalle-poster img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .tag-genero,
+  .badges-horarios {
+    align-self: center; 
+    justify-content: center;
+  }
+}
